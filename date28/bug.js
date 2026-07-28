@@ -463,3 +463,19 @@ console.log("--------------------");
   console.log(multiplyAll([2, 3, 4]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 34
+  // fix: find the first negative number in an array
+  function firstNegative(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < 0) {
+        return arr[i];
+      }
+    }
+
+    return null;
+  }
+
+  console.log(firstNegative([5, 10, -2, -7]));
+}
+console.log("--------------------");
