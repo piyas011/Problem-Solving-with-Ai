@@ -411,3 +411,21 @@ console.log("--------------------");
   console.log(reverseString("hello"));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 31
+  // fix: find the smallest even number in an array
+  function smallestEven(arr) {
+    let smallest = arr[0];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0 && arr[i] < smallest) {
+        smallest = arr[i];
+      }
+    }
+
+    return smallest;
+  }
+
+  console.log(smallestEven([15, 8, 12, 4, 20]));
+}
+console.log("--------------------");
