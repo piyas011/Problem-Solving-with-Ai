@@ -568,3 +568,29 @@ console.log("--------------------");
   console.log(longestWord(["cat", "elephant", "tiger", "javascript"]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 39
+  // fix: remove duplicate numbers without using Set
+
+  function removeDuplicates(arr) {
+    let unique = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      let found = false;
+
+      for (let j = 0; j < unique.length; j++) {
+        if (unique[j] === arr[i]) {
+          found = true;
+        }
+      }
+
+      if (!found) {
+        unique.push(arr[i]);
+      }
+    }
+
+    return unique;
+  }
+
+  console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5, 5]));
+}
