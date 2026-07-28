@@ -192,3 +192,35 @@ console.log("--------------------");
   console.log(findIndex([10, 20, 30, 40], 40));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 20: Sum of Even Numbers
+  function sumEven(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        sum += arr[i];
+      }
+    }
+
+    return sum;
+  }
+
+  console.log(sumEven([1, 2, 3, 4, 5, 6]));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 21
+  function isSorted(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < arr[i + 1]) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  console.log(isSorted([1, 2, 3, 4, 5]));
+}
+console.log("--------------------");
