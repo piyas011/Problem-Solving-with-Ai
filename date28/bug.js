@@ -395,3 +395,19 @@ console.log("--------------------");
   console.log(countPositive([-1, 2, 5, -3, 9]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 30
+  // fix: reverse a string without using built-in methods
+  function reverseString(str) {
+    let reverse = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+      reverse += str[i];
+    }
+
+    return reverse;
+  }
+
+  console.log(reverseString("hello"));
+}
+console.log("--------------------");
