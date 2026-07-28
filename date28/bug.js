@@ -429,3 +429,21 @@ console.log("--------------------");
   console.log(smallestEven([15, 8, 12, 4, 20]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 32
+  // fix: count how many times a target number appears in an array
+  function countTarget(arr, target) {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === target) {
+        count++;
+      }
+    }
+
+    return count;
+  }
+
+  console.log(countTarget([2, 5, 2, 7, 2], 2));
+}
+console.log("--------------------");
