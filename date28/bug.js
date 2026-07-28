@@ -224,3 +224,32 @@ console.log("--------------------");
   console.log(isSorted([1, 2, 3, 4, 5]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 22
+  function countWords(sentence) {
+    let words = sentence.split(" ");
+
+    return words.length;
+  }
+
+  console.log(countWords("I love JavaScript"));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 23
+  function removeZero(arr) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === 0) {
+        continue;
+      }
+      result.push(arr[i]);
+    }
+
+    return result;
+  }
+
+  console.log(removeZero([0, 5, 3, 0, 7, 9]));
+}
+console.log("--------------------");
