@@ -534,3 +534,19 @@ console.log("--------------------");
   console.log(secondSmallest([8, 3, 5, 9, 1, 6]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 37
+  // fix: check whether all numbers in an array are positive
+  function allPositive(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < 0) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  console.log(allPositive([5, 2, 8, 9]));
+}
+console.log("--------------------");
