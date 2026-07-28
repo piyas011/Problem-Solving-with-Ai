@@ -317,3 +317,20 @@ console.log("--------------------");
   console.log(analyzeArray([10, 20, 30, 40, 50]));
 }
 console.log("--------------------");
+{
+  // fix: calculate the sum of all odd numbers in an array
+  function sumOdd(arr) {
+    let total = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 !== 0) {
+        total += arr[i];
+      }
+    }
+
+    return total;
+  }
+
+  console.log(sumOdd([1, 2, 3, 4, 5, 6, 7]));
+}
+console.log("--------------------");
