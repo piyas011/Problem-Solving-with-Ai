@@ -128,3 +128,19 @@ console.log("--------------------");
   console.log(sumOdd([1, 2, 3, 4, 5, 6, 7]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 16: Smallest Number
+  function findSmallest(arr) {
+    let smallest = arr[0];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (smallest > arr[i]) {
+        smallest = arr[i];
+      }
+    }
+
+    return smallest;
+  }
+
+  console.log(findSmallest([10, 5, 2, 8, 1]));
+}
