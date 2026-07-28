@@ -318,6 +318,7 @@ console.log("--------------------");
 }
 console.log("--------------------");
 {
+  //Bug Challenge 26
   // fix: calculate the sum of all odd numbers in an array
   function sumOdd(arr) {
     let total = 0;
@@ -335,6 +336,7 @@ console.log("--------------------");
 }
 console.log("--------------------");
 {
+  // Bug Challenge 27
   // fix: count the number of vowels in a string
   function countVowels(str) {
     let count = 0;
@@ -355,5 +357,23 @@ console.log("--------------------");
   }
 
   console.log(countVowels("javascript"));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 28
+  //fix: return the largest odd number from an array
+  function largestOdd(arr) {
+    let largest = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 !== 0 && arr[i] > largest) {
+        largest = arr[i];
+      }
+    }
+
+    return largest;
+  }
+
+  console.log(largestOdd([12, 5, 18, 21, 7]));
 }
 console.log("--------------------");
