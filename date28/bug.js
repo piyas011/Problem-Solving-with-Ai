@@ -510,3 +510,27 @@ console.log("--------------------");
   console.log(analyzeArray([12, 8, 20, 5, 15]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 36
+  // fix: find the second smallest number in an array
+  function secondSmallest(arr) {
+    let smallest = arr[0];
+    let second = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < smallest) {
+        second = smallest;
+        smallest = arr[i];
+      }
+
+      if (arr[i] < smallest && arr[i] > second) {
+        second = arr[i];
+      }
+    }
+
+    return second;
+  }
+
+  console.log(secondSmallest([8, 3, 5, 9, 1, 6]));
+}
+console.log("--------------------");
