@@ -144,3 +144,51 @@ console.log("--------------------");
 
   console.log(findSmallest([10, 5, 2, 8, 1]));
 }
+console.log("--------------------");
+{
+  // Bug Challenge 17: Count Odd Numbers
+  function countOdd(arr) {
+    let count = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 !== 0) {
+        count++;
+      }
+    }
+
+    return count;
+  }
+
+  console.log(countOdd([1, 2, 3, 4, 5, 6, 7]));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 18: Array Copy
+  function copyArray(arr) {
+    let newArray = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      newArray.push(arr[i]);
+    }
+
+    return newArray;
+  }
+
+  console.log(copyArray([5, 10, 15, 20]));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 19: Find Index
+  function findIndex(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === target) {
+        return i;
+      }
+    }
+
+    return -1;
+  }
+
+  console.log(findIndex([10, 20, 30, 40], 40));
+}
+console.log("--------------------");
