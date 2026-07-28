@@ -253,3 +253,37 @@ console.log("--------------------");
   console.log(removeZero([0, 5, 3, 0, 7, 9]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 24
+  function totalLength(arr) {
+    let total = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      total += arr[i].length;
+    }
+
+    return total;
+  }
+
+  console.log(totalLength(["apple", "banana", "cat"]));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 25 (🔥 Multiple Bugs)
+  function highestEven(arr) {
+    let highest = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        if (arr[i] > highest) {
+          highest = arr[i];
+        }
+      }
+    }
+
+    return highest;
+  }
+
+  console.log(highestEven([7, 12, 3, 20, 16, 9]));
+}
+console.log("--------------------");
