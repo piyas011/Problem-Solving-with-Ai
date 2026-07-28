@@ -111,3 +111,20 @@ console.log("--------------------");
   console.log(secondLargest([10, 40, 20, 80, 60]));
 }
 console.log("--------------------");
+{
+  // Bonus Challenge (Multiple Bugs)
+  function sumOdd(arr) {
+    let total = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 !== 0) {
+        total += arr[i];
+      }
+    }
+
+    return total;
+  }
+
+  console.log(sumOdd([1, 2, 3, 4, 5, 6, 7]));
+}
+console.log("--------------------");
