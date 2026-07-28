@@ -287,3 +287,33 @@ console.log("--------------------");
   console.log(highestEven([7, 12, 3, 20, 16, 9]));
 }
 console.log("--------------------");
+{
+  // Boss Challenge (5+ Bugs)
+  function analyzeArray(arr) {
+    let sum = 0;
+    let max = arr[0];
+    let min = arr[0];
+
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+
+      if (arr[i] < min) {
+        min = arr[i];
+      }
+    }
+
+    return {
+      sum,
+      max,
+      min,
+      average: sum / arr.length,
+    };
+  }
+
+  console.log(analyzeArray([10, 20, 30, 40, 50]));
+}
+console.log("--------------------");
