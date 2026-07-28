@@ -334,3 +334,26 @@ console.log("--------------------");
   console.log(sumOdd([1, 2, 3, 4, 5, 6, 7]));
 }
 console.log("--------------------");
+{
+  // fix: count the number of vowels in a string
+  function countVowels(str) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+      if (
+        str[i] === "a" ||
+        str[i] === "e" ||
+        str[i] === "i" ||
+        str[i] === "o" ||
+        str[i] === "u"
+      ) {
+        count++;
+      }
+    }
+
+    return count;
+  }
+
+  console.log(countVowels("javascript"));
+}
+console.log("--------------------");
