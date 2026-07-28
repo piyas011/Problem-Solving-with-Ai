@@ -447,3 +447,19 @@ console.log("--------------------");
   console.log(countTarget([2, 5, 2, 7, 2], 2));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 33
+  // fix: calculate the product of all numbers in an array
+  function multiplyAll(arr) {
+    let product = 1;
+
+    for (let i = 0; i < arr.length; i++) {
+      product *= arr[i];
+    }
+
+    return product;
+  }
+
+  console.log(multiplyAll([2, 3, 4]));
+}
+console.log("--------------------");
