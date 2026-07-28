@@ -550,3 +550,21 @@ console.log("--------------------");
   console.log(allPositive([5, 2, 8, 9]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 38
+  // fix: find the longest word in an array
+  function longestWord(words) {
+    let longest = words[0];
+
+    for (let i = 1; i < words.length; i++) {
+      if (words[i].length > longest.length) {
+        longest = words[i];
+      }
+    }
+
+    return longest;
+  }
+
+  console.log(longestWord(["cat", "elephant", "tiger", "javascript"]));
+}
+console.log("--------------------");
