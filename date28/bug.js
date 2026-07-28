@@ -73,3 +73,41 @@ console.log("--------------------");
   console.log(removeNegative([-2, 5, -1, 8, 0, 9]));
 }
 console.log("--------------------");
+{
+  // Bug Challenge 14
+  function countChar(str, ch) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] === ch) {
+        count++;
+      }
+    }
+
+    return count;
+  }
+
+  console.log(countChar("banana", "a"));
+}
+console.log("--------------------");
+{
+  // Bug Challenge 15
+  function secondLargest(arr) {
+    let largest = arr[0];
+    let second = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > largest) {
+        second = largest;
+        largest = arr[i];
+      } else if (arr[i] > second && second < largest) {
+        second = arr[i];
+      }
+    }
+
+    return second;
+  }
+
+  console.log(secondLargest([10, 40, 20, 80, 60]));
+}
+console.log("--------------------");
